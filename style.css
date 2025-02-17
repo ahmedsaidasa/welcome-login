@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: url(colors-backgrounds-cover.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.contaner {
+    color: #fff;
+    padding: 30px 40px;
+    width: 420px ;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter:blur(50px) ;
+    border: 2px solid rgba(255,255,255,.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.7) ;
+
+}
+
+
+.contaner h1 {
+    text-align: center;
+    font-size: 36px;
+}
+ .contaner .input-box {
+    width: 100%;
+    height: 50px ;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    border-radius: 40px;
+    outline: none;
+    border: none ;
+    border: 2px solid rgb(255, 255,255, .2);
+    background: transparent;
+    color: #FFF;
+}
+
+.input-box input::placeholder {
+    color: #FFF;
+}
+
+
+.input-box i {
+    position: absolute ;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+}
+
+.contaner .check {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 14.5px;
+}
+
+.contaner .check label input{
+   accent-color: #fff;
+   margin-right: 3px;  
+}
+
+
+.contaner .check a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contaner .check a:hover {
+    text-decoration: underline;
+}
+
+ .contaner .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: #333;
+}
+.contaner .btn:hover {
+    background: transparent;
+    color: #FFF;
+}
+
+.contaner .register-link  {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.contaner .register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.contaner .register-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:500px) {
+    .contaner {
+        width: 80%;
+        height: 450px;
+        
+    }
+    .contaner .check {
+        margin: 10px;
+        text-align: center ;
+        flex-direction: column;
+       
+    }
+
+    .contaner .check a {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    .input-box input::placeholder {
+        font-size: 11px;
+    }
+    .register-link p a {
+        font-size: 12px;
+    }
+    .contaner .btn {
+        font-size: 15px;
+    }
+    .input-box input {
+        font-size: 12px;
+        width: 110%;
+        position: relative;
+        height: 50px;
+    }
+    .input-box i {
+    position: absolute ;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+
+    }
+
+    .contaner .register-link {
+        font-size: 11px;
+    }
+    
+
+
+
+}
+
+
